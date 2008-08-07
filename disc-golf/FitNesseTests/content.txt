@@ -1,0 +1,8 @@
+!2 !-The Disc Golf FitNesse Intro-!
+
+!2 !contents
+
+!path ../disc-golf/target/classes
+!path ../disc-golf/target/test-classes
+!path ../disc-golf/target/dependency
+

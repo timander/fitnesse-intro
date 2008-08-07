@@ -1,0 +1,9 @@
+!|Import|
+|net.cijug.fitnesse.CalculateScoreFixture|
+
+!|net.cijug.fitnesse.CalculateScoreFixture|
+|number of throws|par|score?|
+|5|3|+2|
+|3|3|0|
+|1|3|-2|
+|9|4|+5|

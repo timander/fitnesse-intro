@@ -1,12 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
-  <groupId>net.cijug.fitnesse</groupId>
+
+  <groupId>net.cijug</groupId>
   <artifactId>disc-golf</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>disc-golf</name>
-  <url>http://maven.apache.org</url>
+  <url>http://cijug.net</url>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -14,5 +17,74 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>org.fitnesse</groupId>
+          <artifactId>fitlibrary</artifactId>
+          <version>20070619</version>
+      </dependency>
+      <dependency>
+          <groupId>org.fitnesse</groupId>
+          <artifactId>fitlibrary</artifactId>
+          <version>20070619</version>
+      </dependency>
   </dependencies>
+
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>copy-dependencies</id>
+                    <goals>
+                        <goal>copy-dependencies</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>fitnesse-maven-plugin</artifactId>
+            <version>1.0-beta-2</version>
+            <configuration>
+                <fitnesses>
+                    <fitnesse>
+                        <hostName>localhost</hostName>
+                        <port>9002</port>
+                        <pageName>FrontPage.DiscGolf</pageName>
+                    </fitnesse>
+                </fitnesses>
+                <classPathSubstitutions>
+                    <classPathSubstitution>
+                        <search>../disc-golf/target/test-classes</search>
+                        <replaceWith>${basedir}/target/test-classes</replaceWith>
+                    </classPathSubstitution>
+                    <classPathSubstitution>
+                        <search>../disc-golf/target/classes</search>
+                        <replaceWith>${basedir}/target/classes</replaceWith>
+                    </classPathSubstitution>
+                </classPathSubstitutions>
+                <failOnError>true</failOnError>
+            </configuration>
+            <executions>
+                <execution>
+                    <id>fitnesse-tests</id>
+                    <phase>integration-test</phase>
+                    <goals>
+                        <goal>run</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.6</source>
+                <target>1.6</target>
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
 </project>
