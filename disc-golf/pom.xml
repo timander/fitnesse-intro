@@ -10,6 +10,10 @@
   <name>disc-golf</name>
   <url>http://cijug.net</url>
 
+  <properties>
+    <fitnesse.port>9002</fitnesse.port>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -51,7 +55,7 @@
                 <fitnesses>
                     <fitnesse>
                         <hostName>localhost</hostName>
-                        <port>9002</port>
+                        <port>${fitnesse.port}</port>
                         <pageName>FrontPage.DiscGolf</pageName>
                     </fitnesse>
                 </fitnesses>
@@ -81,6 +85,7 @@
                 </execution>
             </executions>
         </plugin>
+	<!--
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
@@ -89,6 +94,7 @@
                 <target>1.6</target>
             </configuration>
         </plugin>
+	-->
     </plugins>
     </build>
 </project>
