@@ -1,3 +1,4 @@
+|FrontPage.DiscGolf.DetermineWinner||13:06:20 Fri, Aug 08, 2008|
 |FrontPage.DiscGolf||20:56:51 Wed, Aug 06, 2008|
 |FrontPage.DiscGolf.CalculateScore||20:55:45 Wed, Aug 06, 2008|
 |FrontPage||20:35:27 Wed, Aug 06, 2008|

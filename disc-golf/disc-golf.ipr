@@ -824,7 +824,7 @@
       <module fileurl="file://$PROJECT_DIR$/disc-golf.iml" filepath="$PROJECT_DIR$/disc-golf.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="true" project-jdk-name="java version &quot;1.6.0_02&quot;" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="true" project-jdk-name="java version &quot;1.6.0_04&quot;" project-jdk-type="JavaSDK" />
   <component name="ResourceManagerContainer">
     <option name="myResourceBundles">
       <value>

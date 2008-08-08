@@ -14,7 +14,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Documents and Settings/tandersen/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar!/" />
+          <root url="jar://c:/java/maven-local-repo/org/fitnesse/fitlibrary/20070619/fitlibrary-20070619.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -23,7 +23,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Documents and Settings/tandersen/.m2/repository/org/fitnesse/fitlibrary/20070619/fitlibrary-20070619.jar!/" />
+          <root url="jar://c:/java/maven-local-repo/org/fitnesse/fitnesse/20070619/fitnesse-20070619.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -32,7 +32,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Documents and Settings/tandersen/.m2/repository/org/fitnesse/fitnesse/20070619/fitnesse-20070619.jar!/" />
+          <root url="jar://c:/java/maven-local-repo/junit/junit/3.8.1/junit-3.8.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

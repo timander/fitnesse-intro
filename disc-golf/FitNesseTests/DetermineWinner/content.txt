@@ -1,0 +1,18 @@
+!|net.cijug.fitnesse.DiscGolfDoFixture|
+
+|hole|1|has par of|3|
+|hole|2|has par of|3|
+|hole|3|has par of|4|
+
+|player|Jeff|threw|3|times for hole|1|
+|player|Jeff|threw|2|times for hole|2|
+|player|Jeff|threw|4|times for hole|3|
+|player|Max|threw|4|times for hole|1|
+|player|Max|threw|3|times for hole|2|
+|player|Max|threw|5|times for hole|3|
+
+|check|total score for|!3 Jeff|is|!3 -1|
+
+|check|total score for|!3 Max|is|!3 2|
+
+|check|!3 the winner is|!3 Jeff|
