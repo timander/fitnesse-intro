@@ -3,40 +3,38 @@ package net.cijug.fitnesse;
 import fitlibrary.DoFixture;
 import java.util.HashMap;
 import java.util.Map;
+import net.cijug.discgolf.Game;
+import net.cijug.discgolf.Course;
+import net.cijug.discgolf.Hole;
+import net.cijug.discgolf.Player;
 
 
 public class DiscGolfDoFixture extends DoFixture {
 
-    private Map<String, Integer> parForHole;
-    private Map<String, Integer> runningTotals;
+    private Game game;
+
+    public DiscGolfDoFixture() {
+        game = new Game(new Course());
+    }
 
     public boolean holeHasParOf(String hole, Integer par) {
-        if (parForHole == null) {
-            parForHole = new HashMap<String, Integer>();
-        }
-        parForHole.put(hole, par);
+        game.addHole(new Hole(hole, par));
         return true;
     }
 
 
     public boolean playerThrewTimesForHole(String player, Integer numberOfThrows, String hole) {
-        if (runningTotals == null) runningTotals = new HashMap<String, Integer>();
-        if (runningTotals.get(player) == null) runningTotals.put(player, 0);
-
-        runningTotals.put(player, runningTotals.get(player) + numberOfThrows - parForHole.get(hole));
+        game.player(player).threw(numberOfThrows, game.getCourse().getHole(hole));
         return true;
     }
 
 
     public String theWinnerIs() {
-        for (String player : runningTotals.keySet()) {
-            runningTotals.get(runningTotals.keySet());
-        }
-        return "Jeff";
+        return game.winner().getName();
     }
 
 
     public Integer totalScoreForIs(String player) {
-        return runningTotals.get(player);
+        return game.player(player).currentScore();
     }
 }
