@@ -64,6 +64,10 @@
                         <search>../disc-golf/target/classes</search>
                         <replaceWith>${basedir}/target/classes</replaceWith>
                     </classPathSubstitution>
+                    <classPathSubstitution>
+                        <search>../disc-golf/target/dependency</search>
+                        <replaceWith>${basedir}/target/dependency</replaceWith>
+                    </classPathSubstitution>
                 </classPathSubstitutions>
                 <failOnError>true</failOnError>
             </configuration>
