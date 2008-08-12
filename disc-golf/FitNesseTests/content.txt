@@ -4,5 +4,5 @@
 
 !path ../disc-golf/target/classes
 !path ../disc-golf/target/test-classes
-!path ../disc-golf/target/dependency
+!path ../disc-golf/target/dependency/*.jar
 
