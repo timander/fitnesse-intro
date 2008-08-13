@@ -1,7 +1,7 @@
 package net.cijug.discgolf;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class Game {
@@ -15,39 +15,41 @@ public class Game {
     }
 
 
-    public Course getCourse() {
-        return course;
-    }
-
-    public void addHole(Hole hole){
+    public void addHole(Hole hole) {
         getCourse().addHole(hole);
     }
 
-    public Player player(String name){
+
+    public Player player(String name) {
         Player player = null;
         for (Player p : players) {
-            if (name.equals(p.getName())){
+            if (name.equals(p.getName())) {
                 player = p;
             }
         }
-        if (player == null){
+        if (player == null) {
             player = new Player(name);
             players.add(player);
         }
         return player;
     }
 
+
     public Player winner() {
         Player winner = null;
         for (Player player : players) {
-            if (winner == null){
+            if (winner == null) {
                 winner = player;
             }
-            if (player.currentScore() < winner.currentScore()){
+            if (player.scoreAsInteger() < winner.scoreAsInteger()) {
                 winner = player;
             }
         }
         return winner;
+    }
 
+
+    public Course getCourse() {
+        return course;
     }
 }

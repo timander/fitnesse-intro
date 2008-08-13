@@ -1,7 +1,7 @@
 package net.cijug.discgolf;
 
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 
@@ -15,14 +15,8 @@ public class Player {
         score = new HashMap<Hole, Integer>();
     }
 
-    public void threw(Integer numberOfThrows, Hole hole) {
-        if (score == null){
-            score = new HashMap<Hole, Integer>();
-        }
-        score.put(hole, numberOfThrows);
-    }
 
-    public Integer numberOfThrows(){
+    public Integer numberOfThrows() {
         Integer numberOfThrows = 0;
         Set<Hole> holeSet = score.keySet();
         for (Hole hole : holeSet) {
@@ -31,14 +25,29 @@ public class Player {
         return numberOfThrows;
     }
 
-    public Integer currentScore(){
+
+    public String score() {
         Integer totalPar = 0;
         Set<Hole> holeSet = score.keySet();
         for (Hole hole : holeSet) {
             totalPar += hole.getPar();
         }
-        return numberOfThrows() - totalPar;
+        return new Score().calculate(numberOfThrows(), totalPar);
     }
+
+
+    public Integer scoreAsInteger() {
+        return Integer.valueOf(score().replace("+", ""));
+    }
+
+
+    public void threw(Integer numberOfThrows, Hole hole) {
+        if (score == null) {
+            score = new HashMap<Hole, Integer>();
+        }
+        score.put(hole, numberOfThrows);
+    }
+
 
     public String getName() {
         return name;

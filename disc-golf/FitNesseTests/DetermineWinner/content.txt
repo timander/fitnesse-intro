@@ -13,6 +13,6 @@
 
 |check|total score for|!3 Jeff|is|!3 -1|
 
-|check|total score for|!3 Max|is|!3 2|
+|check|total score for|!3 Max|is|!3 +2|
 
 |check|!3 the winner is|!3 Jeff|
