@@ -9,6 +9,7 @@ public class Player {
 
     private Map<Hole, Integer> score;
     private String name;
+    private Double money;
 
     public Player(String name) {
         this.name = name;
@@ -51,5 +52,8 @@ public class Player {
 
     public String getName() {
         return name;
+    }
+    public Double getMoney() {
+        return money;
     }
 }
