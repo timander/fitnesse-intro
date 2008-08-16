@@ -1,6 +1,5 @@
 package net.cijug.fitnesse;
 
-import fit.Fixture;
 import fitlibrary.DoFixture;
 import net.cijug.discgolf.Course;
 import net.cijug.discgolf.Game;
@@ -9,8 +8,8 @@ import net.cijug.discgolf.Player;
 
 
 public class DiscGolfDoFixture extends DoFixture {
-    private DiscsForSaleFixture discShop;
 
+    private DiscsForSaleFixture discShop;
     private Game game;
 
     public DiscGolfDoFixture() {
@@ -18,7 +17,7 @@ public class DiscGolfDoFixture extends DoFixture {
     }
 
 
-    public Fixture discShop() {
+    public DiscsForSaleFixture discShop() {
         if (discShop == null) {
             discShop = new DiscsForSaleFixture();
         }
@@ -28,6 +27,11 @@ public class DiscGolfDoFixture extends DoFixture {
 
     public Player findPlayer(String name) {
         return game.player(name);
+    }
+
+
+    public boolean getNetDotCijugDotFitnesseDotDiscGolfDoFixture() {
+        return true;
     }
 
 

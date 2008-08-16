@@ -1,0 +1,16 @@
+Thanks for trying out the fitnesse-intro!
+
+
+ -bin           convenience shell scripts
+ -disc-golf     application code and test code
+ -fitnesse      FitNesse server
+ -README        this file
+
+
+You may need to install the fitnesse and fitlibrary
+artifacts manually because they are new and not in
+the Maven2 central repository yet.  There is a script
+in the bin directory for your convenience.
+
+
+Tim Andersen & Luke Amdor

@@ -8,5 +8,4 @@ public class Score {
         return score < 0 ? ("+") + Math.abs(score) : ("-") + Math.abs(score);
     }
 
-
 }
