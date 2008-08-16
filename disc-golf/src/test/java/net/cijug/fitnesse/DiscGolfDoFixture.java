@@ -1,29 +1,49 @@
 package net.cijug.fitnesse;
 
+import fit.Fixture;
 import fitlibrary.DoFixture;
 import net.cijug.discgolf.Course;
 import net.cijug.discgolf.Game;
 import net.cijug.discgolf.Hole;
 import net.cijug.discgolf.Player;
-import net.cijug.discgolf.Disc;
-import fit.RowFixture;
-import java.util.Map;
-import java.util.List;
-import java.util.ArrayList;
 
 
 public class DiscGolfDoFixture extends DoFixture {
+    private DiscsForSaleFixture discShop;
 
     private Game game;
-    List<Disc> discs;
 
     public DiscGolfDoFixture() {
         game = new Game(new Course());
     }
 
 
+    public Fixture discShop() {
+        if (discShop == null) {
+            discShop = new DiscsForSaleFixture();
+        }
+        return discShop;
+    }
+
+
+    public Player findPlayer(String name) {
+        return game.player(name);
+    }
+
+
     public boolean holeHasParOf(String hole, Integer par) {
         game.addHole(new Hole(hole, par));
+        return true;
+    }
+
+
+    public DiscsPlayerCanAffordFixture playerCanAfford(Player player) {
+        return new DiscsPlayerCanAffordFixture(player, discShop.getDiscs());
+    }
+
+
+    public boolean playerHas(Player player, String money) {
+        player.setMoney(new Double(money.replaceAll("\\$", "")));
         return true;
     }
 
@@ -36,26 +56,6 @@ public class DiscGolfDoFixture extends DoFixture {
 
     public String theWinnerIs() {
         return game.winner().getName();
-    }
-
-    public boolean playerHas(String player, String money){
-        //todo: implement me
-        return true;
-    }
-
-    public boolean discsForSale(Map<String, String> discNameAndPrice){
-        //todo: implement me
-        discs = new ArrayList<Disc>();
-        discNameAndPrice.keySet();
-        for (String discName : discNameAndPrice.keySet()) {
-            discs.add(new Disc(discName, Double.valueOf(discNameAndPrice.get(discName))));
-        }
-
-        return true;
-    }
-
-    public DiscsPlayerCanAffordFixture playerCanAfford(Player player) {
-        return new DiscsPlayerCanAffordFixture(player, discs);
     }
 
 

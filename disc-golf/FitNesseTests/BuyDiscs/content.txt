@@ -6,22 +6,24 @@
 
 !define discsForSale {
 |Banshee|$12|
-|Orc|$14|
-|Gazelle|$8|
-|Starfire|$11|
-|Cheeta|$10|
 }
 
-|Discs For Sale|${discsForSale}|
+|disc shop|
+|sells|Banshee|for|$12|
+|sells|Orc|for|$14|
+|sells|Gazelle|for|$8|
+|sells|Starfire|for|$11|
+|sells|Cheeta|for|$10|
 
 |Player|Jeff|can afford|
-|disc|price|
-|Banshee|$12|
-|Orc|$14|
-|Gazelle|$8|
-|Starfire|$11|
-|Cheeta|$10|
+|getName()|
+|Banshee|
+|Orc|
+|Gazelle|
+|Starfire|
+|Cheeta|
 
 |Player|Max|can afford|
-|Gazelle|$8|
-|Cheeta|$10|
+|getName()|
+|Gazelle|
+|Cheeta|

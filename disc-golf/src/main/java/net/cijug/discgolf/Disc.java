@@ -11,6 +11,11 @@ public class Disc {
     }
 
 
+    public String getPriceFormatted() {
+        return "$" + price;
+    }
+
+
     public String getName() {
         return name;
     }

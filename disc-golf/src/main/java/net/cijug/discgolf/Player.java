@@ -6,10 +6,10 @@ import java.util.Set;
 
 
 public class Player {
+    private Double money = 0.0;
 
     private Map<Hole, Integer> score;
     private String name;
-    private Double money;
 
     public Player(String name) {
         this.name = name;
@@ -50,10 +50,17 @@ public class Player {
     }
 
 
-    public String getName() {
-        return name;
-    }
     public Double getMoney() {
         return money;
+    }
+
+
+    public void setMoney(Double money) {
+        this.money = money;
+    }
+
+
+    public String getName() {
+        return name;
     }
 }
