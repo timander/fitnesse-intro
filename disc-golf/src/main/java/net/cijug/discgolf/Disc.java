@@ -2,17 +2,18 @@ package net.cijug.discgolf;
 
 public class Disc {
 
-    private Double price;
+    private Money price;
     private String name;
 
-    public Disc(String name, Double price) {
+
+    public Disc(String name, String price) {
         this.name = name;
-        this.price = price;
+        this.price = new Money(price);
     }
 
 
     public String getPriceFormatted() {
-        return "$" + price;
+        return getPrice().asString();
     }
 
 
@@ -21,7 +22,7 @@ public class Disc {
     }
 
 
-    public Double getPrice() {
+    public Money getPrice() {
         return price;
     }
 

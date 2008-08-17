@@ -36,7 +36,7 @@ public class DiscsForSaleFixture extends DoFixture {
     public boolean sells(Map<String, String> map) {
         Set<String> discNames = map.keySet();
         for (String discName : discNames) {
-            Disc disc = new Disc(discName, new Double(map.get(discName).replaceAll("\\$", "")));
+            Disc disc = new Disc(discName, map.get(discName));
             store.addToInventory(disc);
         }
         return true;

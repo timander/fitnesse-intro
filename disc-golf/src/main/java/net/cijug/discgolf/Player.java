@@ -8,8 +8,8 @@ import java.util.Set;
 
 public class Player {
 
-    private Double money = 0.0;
     private Map<Hole, Integer> score;
+    private Money money = new Money(0.0);
     private Set<Disc> discs;
     private String name;
 
@@ -22,12 +22,12 @@ public class Player {
 
     public void buy(Disc disc) {
         discs.add(disc);
-        money -= disc.getPrice();
+        money = money.subtract(disc.getPrice());
     }
 
 
     public String getMoneyFormatted() {
-        return "$" + getMoney().intValue();
+        return getMoney().asString();
     }
 
 
@@ -69,12 +69,12 @@ public class Player {
     }
 
 
-    public Double getMoney() {
+    public Money getMoney() {
         return money;
     }
 
 
-    public void setMoney(Double money) {
+    public void setMoney(Money money) {
         this.money = money;
     }
 

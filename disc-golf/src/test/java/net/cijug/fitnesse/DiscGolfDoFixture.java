@@ -4,6 +4,7 @@ import fitlibrary.DoFixture;
 import net.cijug.discgolf.Course;
 import net.cijug.discgolf.Game;
 import net.cijug.discgolf.Hole;
+import net.cijug.discgolf.Money;
 import net.cijug.discgolf.Player;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -28,6 +29,11 @@ public class DiscGolfDoFixture extends DoFixture {
     }
 
 
+    public Money findMoney(String money) {
+        return new Money(money);
+    }
+
+
     public Player findPlayer(String name) {
         return game.player(name);
     }
@@ -44,8 +50,8 @@ public class DiscGolfDoFixture extends DoFixture {
     }
 
 
-    public boolean playerBeginsWith(Player player, String money) {
-        player.setMoney(new Double(money.replaceAll("\\$", "")));
+    public boolean playerBeginsWith(Player player, Money money) {
+        player.setMoney(money);
         return true;
     }
 

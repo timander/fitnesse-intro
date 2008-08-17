@@ -4,6 +4,7 @@ import fit.RowFixture;
 import net.cijug.discgolf.Disc;
 import net.cijug.discgolf.Player;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -15,7 +16,7 @@ public class DiscsPlayerCanAffordFixture extends RowFixture {
 
     public DiscsPlayerCanAffordFixture(Player player, Set<Disc> discs) {
         this.player = player;
-        this.discs = discs;
+        this.discs = new HashSet<Disc>(discs);
     }
 
 
@@ -29,7 +30,7 @@ public class DiscsPlayerCanAffordFixture extends RowFixture {
     public Object[] query() throws Exception {
         List<Disc> affordableDiscs = new ArrayList<Disc>();
         for (Disc disc : discs) {
-            if (player.getMoney() >= disc.getPrice()) {
+            if (player.getMoney().asDouble() >= disc.getPrice().asDouble()) {
                 affordableDiscs.add(disc);
             }
         }
