@@ -1,12 +1,8 @@
 !|net.cijug.fitnesse.DiscGolfDoFixture|
 
-|Player|Jeff|has|$25|
+|Player|Jeff|begins with|$25|
 
-|Player|Max|has|$10|
-
-!define discsForSale {
-|Banshee|$12|
-}
+|Player|Max|begins with|$10|
 
 |disc shop|
 |sells|Banshee|for|$12|
@@ -26,4 +22,20 @@
 |Player|Max|can afford|
 |getName()|
 |Gazelle|
+|Cheeta|
+
+!define discsJeffBought {
+|Starfire|
+|Gazelle|
+}
+
+|Player|Jeff|buys|${discsJeffBought}|
+
+|check|Player|Jeff|has|$6|
+
+|Player|Jeff|can afford|
+|getName()|
+
+|Player|Max|can afford|
+|getName()|
 |Cheeta|

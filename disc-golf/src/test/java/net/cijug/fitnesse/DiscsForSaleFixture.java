@@ -2,13 +2,29 @@ package net.cijug.fitnesse;
 
 import fitlibrary.DoFixture;
 import net.cijug.discgolf.Disc;
-import java.util.ArrayList;
-import java.util.List;
+import net.cijug.discgolf.Player;
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class DiscsForSaleFixture extends DoFixture {
 
-    private List<Disc> discs = new ArrayList<Disc>();
+    private Set<Disc> discs = new HashSet<Disc>();
+
+
+    public Set<Disc> getDiscs() {
+        return new HashSet<Disc>(discs);
+    }
+
+
+    public boolean purchase(Player player, Set<String> discNames) {
+        for (String discName : discNames) {
+            Disc disc = findDisc(discName);
+            discs.remove(disc);
+            player.bought(disc);
+        }
+        return true;
+    }
 
 
     public boolean sellsFor(String name, String price) {
@@ -17,8 +33,12 @@ public class DiscsForSaleFixture extends DoFixture {
     }
 
 
-    public List<Disc> getDiscs() {
-        return discs;
+    private Disc findDisc(String discName) {
+        for (Disc disc : discs) {
+            if (discName.equals(disc.getName())) {
+                return disc;
+            }
+        }
+        return null;
     }
-
 }

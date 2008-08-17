@@ -5,14 +5,15 @@ import net.cijug.discgolf.Disc;
 import net.cijug.discgolf.Player;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 
 public class DiscsPlayerCanAffordFixture extends RowFixture {
 
-    private List<Disc> discs;
     private Player player;
+    private Set<Disc> discs;
 
-    public DiscsPlayerCanAffordFixture(Player player, List<Disc> discs) {
+    public DiscsPlayerCanAffordFixture(Player player, Set<Disc> discs) {
         this.player = player;
         this.discs = discs;
     }

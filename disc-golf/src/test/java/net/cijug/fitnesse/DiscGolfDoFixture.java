@@ -5,6 +5,9 @@ import net.cijug.discgolf.Course;
 import net.cijug.discgolf.Game;
 import net.cijug.discgolf.Hole;
 import net.cijug.discgolf.Player;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class DiscGolfDoFixture extends DoFixture {
@@ -41,14 +44,26 @@ public class DiscGolfDoFixture extends DoFixture {
     }
 
 
+    public boolean playerBeginsWith(Player player, String money) {
+        player.setMoney(new Double(money.replaceAll("\\$", "")));
+        return true;
+    }
+
+
+    public boolean playerBuys(Player player, String[] discs) {
+        Set<String> discSet = new HashSet<String>();
+        discSet.addAll(Arrays.asList(discs));
+        return discShop.purchase(player, discSet);
+    }
+
+
     public DiscsPlayerCanAffordFixture playerCanAfford(Player player) {
         return new DiscsPlayerCanAffordFixture(player, discShop.getDiscs());
     }
 
 
-    public boolean playerHas(Player player, String money) {
-        player.setMoney(new Double(money.replaceAll("\\$", "")));
-        return true;
+    public String playerHas(Player player) {
+        return player.getMoneyFormatted();
     }
 
 

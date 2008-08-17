@@ -1,19 +1,34 @@
 package net.cijug.discgolf;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
 
 public class Player {
-    private Double money = 0.0;
 
+    private Double money = 0.0;
     private Map<Hole, Integer> score;
+    private Set<Disc> discs;
     private String name;
 
     public Player(String name) {
         this.name = name;
         score = new HashMap<Hole, Integer>();
+        discs = new HashSet<Disc>();
+    }
+
+
+    public void bought(Disc disc) {
+        System.out.println("Player.bought");
+        discs.add(disc);
+        money -= disc.getPrice();
+    }
+
+
+    public String getMoneyFormatted() {
+        return "$" + getMoney().intValue();
     }
 
 
@@ -24,6 +39,11 @@ public class Player {
             numberOfThrows += score.get(hole);
         }
         return numberOfThrows;
+    }
+
+
+    public Set<Disc> ownsDiscs() {
+        return new HashSet<Disc>(discs);
     }
 
 
