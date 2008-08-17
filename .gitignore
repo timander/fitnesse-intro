@@ -2,5 +2,7 @@ disc-golf/target
 disc-golf/disc-golf.iml
 disc-golf/disc-golf.ipr
 disc-golf/disc-golf.iws
-fitnesse/FitNesseRoot/ErrorLogs/
-fitnesse/FitNesseRoot/RecentChanges/
+fitnesse/FitNesseRoot/ErrorLogs
+fitnesse/FitNesseRoot/RecentChanges
+fitnesse/FitNesseRoot/RecentChanges/content.txt
+fitnesse/FitNesseRoot/RecentChanges/properties.xml

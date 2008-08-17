@@ -2,6 +2,7 @@ package net.cijug.fitnesse;
 
 import fitlibrary.DoFixture;
 import net.cijug.discgolf.Course;
+import net.cijug.discgolf.Disc;
 import net.cijug.discgolf.Game;
 import net.cijug.discgolf.Hole;
 import net.cijug.discgolf.Money;
@@ -70,6 +71,11 @@ public class DiscGolfDoFixture extends DoFixture {
 
     public String playerHas(Player player) {
         return player.getMoney().formatted();
+    }
+
+
+    public Set<Disc> playerOwnsDiscs(Player player) {
+        return player.ownsDiscs();
     }
 
 

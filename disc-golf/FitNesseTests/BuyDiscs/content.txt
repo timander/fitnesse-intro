@@ -45,3 +45,8 @@
 |Player|Max|can afford|
 |getName()|
 |Cheeta|
+
+|Player|Jeff|owns discs|
+|name|
+|Starfire|
+|Gazelle|
