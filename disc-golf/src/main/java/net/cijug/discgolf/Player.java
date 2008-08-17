@@ -20,8 +20,7 @@ public class Player {
     }
 
 
-    public void bought(Disc disc) {
-        System.out.println("Player.bought");
+    public void buy(Disc disc) {
         discs.add(disc);
         money -= disc.getPrice();
     }
