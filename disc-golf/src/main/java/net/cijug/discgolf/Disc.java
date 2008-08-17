@@ -13,7 +13,7 @@ public class Disc {
 
 
     public String getPriceFormatted() {
-        return getPrice().asString();
+        return getPrice().formatted();
     }
 
 

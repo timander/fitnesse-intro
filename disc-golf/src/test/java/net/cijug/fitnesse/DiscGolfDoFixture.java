@@ -69,7 +69,7 @@ public class DiscGolfDoFixture extends DoFixture {
 
 
     public String playerHas(Player player) {
-        return player.getMoneyFormatted();
+        return player.getMoney().formatted();
     }
 
 

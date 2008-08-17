@@ -30,7 +30,7 @@ public class DiscsPlayerCanAffordFixture extends RowFixture {
     public Object[] query() throws Exception {
         List<Disc> affordableDiscs = new ArrayList<Disc>();
         for (Disc disc : discs) {
-            if (player.getMoney().asDouble() >= disc.getPrice().asDouble()) {
+            if (player.getMoney().getAmount() >= disc.getPrice().getAmount()) {
                 affordableDiscs.add(disc);
             }
         }

@@ -26,11 +26,6 @@ public class Player {
     }
 
 
-    public String getMoneyFormatted() {
-        return getMoney().asString();
-    }
-
-
     public Integer numberOfThrows() {
         Integer numberOfThrows = 0;
         Set<Hole> holeSet = score.keySet();

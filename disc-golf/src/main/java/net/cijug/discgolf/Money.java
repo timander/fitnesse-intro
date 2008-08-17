@@ -15,18 +15,13 @@ public class Money {
     }
 
 
-    public Double asDouble() {
-        return amount;
-    }
-
-
-    public String asString() {
+    public String formatted() {
         return "$" + amount.intValue();
     }
 
 
     public Money subtract(Money price) {
-        return new Money(amount - price.asDouble());
+        return new Money(amount - price.getAmount());
     }
 
 
