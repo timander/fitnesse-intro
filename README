@@ -7,10 +7,29 @@ Thanks for trying out the fitnesse-intro!
  -README        this file
 
 
+You must have Java, Maven2, and Git installed and in your $PATH
+
 You may need to install the fitnesse and fitlibrary
 artifacts manually because they are new and not in
 the Maven2 central repository yet.  There is a script
 in the bin directory for your convenience.
 
+############################
+### Quick Start Commands ###
+############################
+
+mkdir git
+cd git
+git clone git://github.com/timander/fitnesse-intro.git
+cd fitnesse-intro/bin
+./mvn_install_fitnesse_jars.sh
+cd ../fitnesse
+### start fitnesse ###
+cd ../disc-golf
+mvn clean install
+
+############################
 
 Tim Andersen & Luke Amdor
+
+
