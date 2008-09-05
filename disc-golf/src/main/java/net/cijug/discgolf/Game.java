@@ -2,6 +2,8 @@ package net.cijug.discgolf;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.SortedSet;
+import java.util.Collections;
 
 
 public class Game {
@@ -36,16 +38,8 @@ public class Game {
 
 
     public Player winner() {
-        Player winner = null;
-        for (Player player : players) {
-            if (winner == null) {
-                winner = player;
-            }
-            if (player.scoreAsInteger() < winner.scoreAsInteger()) {
-                winner = player;
-            }
-        }
-        return winner;
+        Collections.sort(players);
+        return players.get(0);
     }
 
 

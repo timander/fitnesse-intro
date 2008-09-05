@@ -10,7 +10,7 @@ public class CalculateScoreFixture extends ColumnFixture {
     public Integer par;
 
     public String score() {
-        return new Score().calculate(numberOfThrows, par);
+        return new Score(par, numberOfThrows).toString();
     }
 
 }

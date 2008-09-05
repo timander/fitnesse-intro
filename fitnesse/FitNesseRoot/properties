@@ -1,9 +1,9 @@
 #FitNesse properties
-#Sat Aug 16 10:24:00 CDT 2008
+#Thu Sep 04 19:00:50 CDT 2008
 WikiImportFormatUpdate=applied
 PropertiesToXmlUpdate=applied
 FilesAttributeUpdate=applied
 SymLinkPropertyFormatUpdate=applied
 VirtualWikiDeprecationUpdate=applied
-WhereUsedAttributeUpdate=applied
 RecentChangesAttributeUpdate=applied
+WhereUsedAttributeUpdate=applied

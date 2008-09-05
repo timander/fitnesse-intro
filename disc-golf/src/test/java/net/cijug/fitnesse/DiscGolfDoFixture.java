@@ -91,6 +91,6 @@ public class DiscGolfDoFixture extends DoFixture {
 
 
     public String totalScoreForIs(String player) {
-        return game.player(player).score();
+        return game.player(player).score().toString();
     }
 }

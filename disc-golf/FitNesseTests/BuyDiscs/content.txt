@@ -6,11 +6,11 @@
 
 !**> discs for sale
 !define discsForSale {
-|Banshee|$12|
-|Orc|$14|
+|Archangel|$12|
+|Stingray|$14|
 |Gazelle|$8|
 |Starfire|$11|
-|Cheeta|$10|
+|Tee-Bird|$10|
 }
 **!
 
@@ -19,16 +19,16 @@
 
 |Player|Jeff|can afford|
 |getName()|
-|Banshee|
-|Orc|
+|Archangel|
+|Stingray|
 |Gazelle|
 |Starfire|
-|Cheeta|
+|Tee-Bird|
 
 |Player|Max|can afford|
 |getName()|
 |Gazelle|
-|Cheeta|
+|Tee-Bird|
 
 !define discsJeffBought {
 |Starfire|
@@ -44,7 +44,7 @@
 
 |Player|Max|can afford|
 |getName()|
-|Cheeta|
+|Tee-Bird|
 
 |Player|Jeff|owns discs|
 |name|
