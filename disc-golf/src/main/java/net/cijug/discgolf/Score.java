@@ -36,12 +36,4 @@ public class Score {
         return par;
     }
 
-
-    @Override
-    public String toString() {
-        int score = intValue();
-        if (score == 0) return "0";
-        return score < 0 ? ("+") + Math.abs(score) : ("-") + Math.abs(score);
-    }
-
 }
