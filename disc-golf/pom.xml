@@ -63,6 +63,7 @@
                         </fitnesse>
                     </fitnesses>
                     <failOnError>true</failOnError>
+		    <displayOutput>true</displayOutput>
                 </configuration>
                 <executions>
                     <execution>
