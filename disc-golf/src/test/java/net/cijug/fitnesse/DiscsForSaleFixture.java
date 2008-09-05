@@ -24,22 +24,12 @@ public class DiscsForSaleFixture extends DoFixture {
 
 
     public boolean purchase(Player player, Set<String> discNames) {
-        for (String discName : discNames) {
-            Disc disc = store.findDisc(discName);
-            store.sell(disc);
-            player.buy(disc);
-        }
-        return true;
+        return false; // todo: implement me
     }
 
 
     public boolean sells(Map<String, String> map) {
-        Set<String> discNames = map.keySet();
-        for (String discName : discNames) {
-            Disc disc = new Disc(discName, map.get(discName));
-            store.addToInventory(disc);
-        }
-        return true;
+        return false; // todo: implement me
     }
 
 
