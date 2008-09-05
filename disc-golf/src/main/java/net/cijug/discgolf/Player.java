@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 
-public class Player implements Comparable<Player> {
+public class Player {
 
     private Map<Hole, Score> scoreCard;
     private Money money = new Money(0.0);
@@ -17,12 +17,6 @@ public class Player implements Comparable<Player> {
         this.name = name;
         scoreCard = new HashMap<Hole, Score>();
         discs = new HashSet<Disc>();
-    }
-
-
-    @SuppressWarnings({"SubtractionInCompareTo"})
-    public int compareTo(Player o) {
-        return score().intValue() - score().intValue();
     }
 
 
@@ -38,7 +32,7 @@ public class Player implements Comparable<Player> {
 
 
     public Score score() {
-        return new Score(scoreCard.values());
+        return null; // todo: what is my score?
     }
 
 

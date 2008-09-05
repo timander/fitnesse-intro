@@ -38,9 +38,8 @@ public class Game {
 
 
     public Player winner() {
-        Collections.sort(players);
-        return players.get(0);
-    }
+        return null; // todo: who is the winner??
+   }
 
 
     public Course getCourse() {
