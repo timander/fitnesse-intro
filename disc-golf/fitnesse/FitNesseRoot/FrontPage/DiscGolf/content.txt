@@ -1,0 +1,7 @@
+!contents -R2 -g -p -f -h
+
+!2 !-The Disc Golf FitNesse Intro-!
+
+!path ../target/classes
+!path ../target/test-classes
+!path ../target/dependency/*.jar

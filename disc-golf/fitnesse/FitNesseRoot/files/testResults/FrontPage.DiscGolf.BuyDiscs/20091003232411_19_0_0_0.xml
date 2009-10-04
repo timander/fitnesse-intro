@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20090818</FitNesseVersion>
+  <rootPath>BuyDiscs</rootPath>
+    <result>
+    <counts>
+      <right>19</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<table border="1" cellspacing="0">
+<tr><td class="pass">net.cijug.fitnesse.DiscGolfDoFixture</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td class="pass">Player</td>
+<td>Jeff</td>
+<td class="pass">begins with</td>
+<td>$25</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td class="pass">Player</td>
+<td>Max</td>
+<td class="pass">begins with</td>
+<td>$10</td>
+</tr>
+</table>
+<br/><div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('8686866197359176052');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img8686866197359176052"/>
+	</a>
+&nbsp;<span class="meta">discs for sale </span>
+	<div class="hidden" id="8686866197359176052"><span class="meta">variable defined: discsForSale=
+|Archangel|$12|
+|Stingray|$14|
+|Gazelle|$8|
+|Starfire|$11|
+|Tee-Bird|$10|
+</span></div>
+</div>
+<br/><table border="1" cellspacing="0">
+<tr><td colspan="2">disc shop</td>
+</tr>
+<tr><td class="pass">sells</td>
+<td><br/><table border="1" cellspacing="0">
+<tr><td>Archangel</td>
+<td>$12</td>
+</tr>
+<tr><td>Stingray</td>
+<td>$14</td>
+</tr>
+<tr><td>Gazelle</td>
+<td>$8</td>
+</tr>
+<tr><td>Starfire</td>
+<td>$11</td>
+</tr>
+<tr><td>Tee-Bird</td>
+<td>$10</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Player</td>
+<td>Jeff</td>
+<td>can afford</td>
+</tr>
+<tr><td colspan="3">getName()</td>
+</tr>
+<tr><td colspan="3" class="pass">Archangel</td>
+</tr>
+<tr><td colspan="3" class="pass">Stingray</td>
+</tr>
+<tr><td colspan="3" class="pass">Gazelle</td>
+</tr>
+<tr><td colspan="3" class="pass">Starfire</td>
+</tr>
+<tr><td colspan="3" class="pass">Tee-Bird</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Player</td>
+<td>Max</td>
+<td>can afford</td>
+</tr>
+<tr><td colspan="3">getName()</td>
+</tr>
+<tr><td colspan="3" class="pass">Gazelle</td>
+</tr>
+<tr><td colspan="3" class="pass">Tee-Bird</td>
+</tr>
+</table>
+<br/><span class="meta">variable defined: discsJeffBought=
+|Starfire|
+|Gazelle|
+</span><br/><br/><table border="1" cellspacing="0">
+<tr><td class="pass">Player</td>
+<td>Jeff</td>
+<td class="pass">buys</td>
+<td><br/><table border="1" cellspacing="0">
+<tr><td>Starfire</td>
+</tr>
+<tr><td>Gazelle</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>check</td>
+<td>Player</td>
+<td>Jeff</td>
+<td>has</td>
+<td class="pass">$6</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Player</td>
+<td>Jeff</td>
+<td>can afford</td>
+</tr>
+<tr><td colspan="3">getName()</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Player</td>
+<td>Max</td>
+<td>can afford</td>
+</tr>
+<tr><td colspan="3">getName()</td>
+</tr>
+<tr><td colspan="3" class="pass">Tee-Bird</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>Player</td>
+<td>Jeff</td>
+<td>owns discs</td>
+</tr>
+<tr><td colspan="3">name</td>
+</tr>
+<tr><td colspan="3" class="pass">Starfire</td>
+</tr>
+<tr><td colspan="3" class="pass">Gazelle</td>
+</tr>
+</table>
+]]></content>
+    <relativePageName>BuyDiscs</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20090818</FitNesseVersion>
+  <rootPath>CalculateScore</rootPath>
+    <result>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<table border="1" cellspacing="0">
+<tr><td>Import</td>
+</tr>
+<tr><td>net.cijug.fitnesse.CalculateScoreFixture</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td colspan="3">net.cijug.fitnesse.CalculateScoreFixture</td>
+</tr>
+<tr><td>number of throws</td>
+<td>par</td>
+<td>score?</td>
+</tr>
+<tr><td>5</td>
+<td>3</td>
+<td class="pass">+2</td>
+</tr>
+<tr><td>3</td>
+<td>3</td>
+<td class="pass">0</td>
+</tr>
+<tr><td>1</td>
+<td>3</td>
+<td class="pass">-2</td>
+</tr>
+<tr><td>9</td>
+<td>4</td>
+<td class="pass">+5</td>
+</tr>
+</table>
+<br/>]]></content>
+    <relativePageName>CalculateScore</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

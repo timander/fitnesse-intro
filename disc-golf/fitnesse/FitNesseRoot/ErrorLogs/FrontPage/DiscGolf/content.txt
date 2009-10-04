@@ -1,0 +1,6 @@
+!3 !-fit-!
+|'''Date: '''|!-11:24:11 PM (CDT) on Saturday, October 3, 2009-!|
+|'''Test Page: '''|.FrontPage.DiscGolf|
+|'''Command: '''|!-java -cp ../target/classes:../target/test-classes:/Users/timander/dev/github/timander/fitnesse-intro/disc-golf/fitnesse/../target/dependency/fitlibrary-20080812.jar:/Users/timander/dev/github/timander/fitnesse-intro/disc-golf/fitnesse/../target/dependency/fitnesse-20080812.jar:/Users/timander/dev/github/timander/fitnesse-intro/disc-golf/fitnesse/../target/dependency/junit-3.8.1.jar fit.FitServer aluminum-falcon.local 9002 3-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-0.916 seconds-!|

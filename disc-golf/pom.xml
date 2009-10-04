@@ -24,15 +24,15 @@
         <dependency>
             <groupId>org.fitnesse</groupId>
             <artifactId>fitnesse</artifactId>
-            <version>20080812</version>
+            <version>20090818</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.fitnesse</groupId>
-            <artifactId>fitlibrary</artifactId>
-            <version>20080812</version>
-            <scope>test</scope>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.fitnesse</groupId>-->
+            <!--<artifactId>fitlibrary</artifactId>-->
+            <!--<version>20090712</version>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>
@@ -50,41 +50,61 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>fitnesse-maven-plugin</artifactId>
-                <version>1.0-beta-2</version>
-                <configuration>
-                    <classPathProvider>maven</classPathProvider>
-                    <fitnesses>
-                        <fitnesse>
-                            <hostName>localhost</hostName>
-                            <port>${fitnesse.port}</port>
-                            <pageName>FrontPage.DiscGolf</pageName>
-                        </fitnesse>
-                    </fitnesses>
-                    <failOnError>true</failOnError>
-		    <displayOutput>true</displayOutput>
-                </configuration>
+                <artifactId>maven-trinidad-plugin</artifactId>
+                <version>20090818</version>
                 <executions>
                     <execution>
-                        <id>fitnesse-tests</id>
-                        <phase>integration-test</phase>
+                        <phase>test</phase>
                         <goals>
-                            <goal>run</goal>
+                            <goal>run-tests</goal>
                         </goals>
-                    </execution>
-                </executions>
+                    <configuration>
+                        <testEngine>fit</testEngine>
+                        <testRepositoryType>fitnesse</testRepositoryType>
+                        <testRepositoryUri>fitnesse</testRepositoryUri>
+                        <resultRepositoryUri>${project.build.directory}/fitnesse</resultRepositoryUri>
+                        <breakBuildOnFailure>true</breakBuildOnFailure>
+                        <suites>
+                            <suite>FrontPage.DiscGolf</suite>
+                        </suites>
+                    </configuration>
+                </execution>
+            </executions>
             </plugin>
-
+            <!--<plugin>-->
+                <!--<groupId>org.codehaus.mojo</groupId>-->
+                <!--<artifactId>fitnesse-maven-plugin</artifactId>-->
+                <!--<version>1.0-beta-2</version>-->
+                <!--<configuration>-->
+                    <!--<classPathProvider>maven</classPathProvider>-->
+                    <!--<fitnesses>-->
+                        <!--<fitnesse>-->
+                            <!--<hostName>localhost</hostName>-->
+                            <!--<port>${fitnesse.port}</port>-->
+                            <!--<pageName>FrontPage.DiscGolf</pageName>-->
+                        <!--</fitnesse>-->
+                    <!--</fitnesses>-->
+                    <!--<failOnError>true</failOnError>-->
+		    <!--<displayOutput>true</displayOutput>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>fitnesse-tests</id>-->
+                        <!--<phase>integration-test</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>run</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
+                    <source>1.6</source>
+                    <target>1.6</target>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 </project>

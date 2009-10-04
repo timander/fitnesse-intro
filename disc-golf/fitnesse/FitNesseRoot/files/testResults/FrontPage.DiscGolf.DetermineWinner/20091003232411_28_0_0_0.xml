@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20090818</FitNesseVersion>
+  <rootPath>DetermineWinner</rootPath>
+    <result>
+    <counts>
+      <right>28</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<table border="1" cellspacing="0">
+<tr><td class="pass">net.cijug.fitnesse.DiscGolfDoFixture</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td class="pass">hole</td>
+<td>1</td>
+<td class="pass">has par of</td>
+<td>3</td>
+</tr>
+<tr><td class="pass">hole</td>
+<td>2</td>
+<td class="pass">has par of</td>
+<td>3</td>
+</tr>
+<tr><td class="pass">hole</td>
+<td>3</td>
+<td class="pass">has par of</td>
+<td>4</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td class="pass">player</td>
+<td>Jeff</td>
+<td class="pass">threw</td>
+<td>3</td>
+<td class="pass">times for hole</td>
+<td>1</td>
+</tr>
+<tr><td class="pass">player</td>
+<td>Jeff</td>
+<td class="pass">threw</td>
+<td>2</td>
+<td class="pass">times for hole</td>
+<td>2</td>
+</tr>
+<tr><td class="pass">player</td>
+<td>Jeff</td>
+<td class="pass">threw</td>
+<td>4</td>
+<td class="pass">times for hole</td>
+<td>3</td>
+</tr>
+<tr><td class="pass">player</td>
+<td>Max</td>
+<td class="pass">threw</td>
+<td>4</td>
+<td class="pass">times for hole</td>
+<td>1</td>
+</tr>
+<tr><td class="pass">player</td>
+<td>Max</td>
+<td class="pass">threw</td>
+<td>3</td>
+<td class="pass">times for hole</td>
+<td>2</td>
+</tr>
+<tr><td class="pass">player</td>
+<td>Max</td>
+<td class="pass">threw</td>
+<td>5</td>
+<td class="pass">times for hole</td>
+<td>3</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>check</td>
+<td>total score for</td>
+<td><h3>Jeff</h3></td>
+<td>is</td>
+<td class="pass"><h3>-1</h3></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>check</td>
+<td>total score for</td>
+<td><h3>Max</h3></td>
+<td>is</td>
+<td class="pass"><h3>+2</h3></td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+<tr><td>check</td>
+<td><h3>the winner is</h3></td>
+<td class="pass"><h3>Jeff</h3></td>
+</tr>
+</table>
+]]></content>
+    <relativePageName>DetermineWinner</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

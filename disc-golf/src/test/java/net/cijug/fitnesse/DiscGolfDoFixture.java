@@ -40,11 +40,6 @@ public class DiscGolfDoFixture extends DoFixture {
     }
 
 
-    public boolean getNetDotCijugDotFitnesseDotDiscGolfDoFixture() {
-        return true;
-    }
-
-
     public boolean holeHasParOf(String hole, Integer par) {
         game.addHole(new Hole(hole, par));
         return true;
