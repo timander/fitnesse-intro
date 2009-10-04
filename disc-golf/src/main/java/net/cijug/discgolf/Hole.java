@@ -1,7 +1,6 @@
 package net.cijug.discgolf;
 
 public class Hole {
-
     private String name;
     private Integer par;
 
@@ -17,6 +16,4 @@ public class Hole {
     public Integer getPar() {
         return par;
     }
-
-
 }

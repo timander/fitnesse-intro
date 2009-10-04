@@ -7,7 +7,6 @@ import java.util.Collections;
 
 
 public class Game {
-
     private Course course;
     private List<Player> players;
 
@@ -16,11 +15,13 @@ public class Game {
         players = new ArrayList<Player>();
     }
 
+    public Course getCourse() {
+        return course;
+    }
 
     public void addHole(Hole hole) {
         getCourse().addHole(hole);
     }
-
 
     public Player player(String name) {
         Player player = null;
@@ -36,14 +37,8 @@ public class Game {
         return player;
     }
 
-
     public Player winner() {
         Collections.sort(players);
         return players.get(0);
-    }
-
-
-    public Course getCourse() {
-        return course;
     }
 }

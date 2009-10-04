@@ -1,7 +1,6 @@
 package net.cijug.discgolf;
 
 public class Disc {
-
     private Money price;
     private String name;
 
@@ -11,20 +10,15 @@ public class Disc {
         this.price = new Money(price);
     }
 
-
-    public String getPriceFormatted() {
-        return getPrice().formatted();
-    }
-
-
     public String getName() {
         return name;
     }
-
 
     public Money getPrice() {
         return price;
     }
 
-
+    public String getPriceFormatted() {
+        return getPrice().formatted();
+    }
 }

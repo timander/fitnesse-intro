@@ -6,12 +6,11 @@ import java.util.Set;
 
 
 public class Store {
-
     private Set<Disc> discs = new HashSet<Disc>();
+
     public boolean addToInventory(Disc disc) {
         return discs.add(disc);
     }
-
 
     public Disc findDisc(String discName) {
         for (Disc disc : discs) {
@@ -22,11 +21,9 @@ public class Store {
         return null;
     }
 
-
     public Set<Disc> getDiscs() {
         return Collections.unmodifiableSet(discs);
     }
-
 
     public void sell(Disc disc) {
         discs.remove(disc);

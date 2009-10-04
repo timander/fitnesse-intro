@@ -1,10 +1,10 @@
 Thanks for trying out the fitnesse-intro!
 
 
- -bin           convenience shell scripts
- -disc-golf     application code and test code
- -fitnesse      FitNesse server
- -README        this file
+ -disc-golf/bin           convenience shell scripts
+ -disc-golf               application code and test code
+ -disc-golf/fitnesse      FitNesse executable and tests
+ -README                  this file
 
 
 You must have Java, Maven2, and Git installed and in your $PATH
@@ -23,13 +23,10 @@ cd git
 git clone git://github.com/timander/fitnesse-intro.git
 cd fitnesse-intro/bin
 ./mvn_install_fitnesse_jars.sh
-cd ../fitnesse
-### start fitnesse ###
-cd ../disc-golf
+./start_fitnesse.sh
+cd ..
 mvn clean install
 
 ############################
 
 Tim Andersen & Luke Amdor
-
-

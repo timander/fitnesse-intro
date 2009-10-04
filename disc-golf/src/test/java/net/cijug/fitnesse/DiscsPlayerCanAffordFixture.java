@@ -3,6 +3,7 @@ package net.cijug.fitnesse;
 import fit.RowFixture;
 import net.cijug.discgolf.Disc;
 import net.cijug.discgolf.Player;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
