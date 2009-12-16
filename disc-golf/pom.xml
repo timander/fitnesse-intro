@@ -41,7 +41,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-trinidad-plugin</artifactId>
-                <version>20090818</version>
+                <version>20091121</version>
                 <executions>
                     <execution>
                         <phase>test</phase>
