@@ -20,7 +20,7 @@
         <dependency>
             <groupId>org.fitnesse</groupId>
             <artifactId>fitnesse</artifactId>
-            <version>20090818</version>
+            <version>20241026</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
